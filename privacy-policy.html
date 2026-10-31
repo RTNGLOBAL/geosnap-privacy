@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GeoSnap Privacy Policy</title>
+<style>
+  :root { --text:#0f1b2d; --muted:#465468; --bg:#f6f8fb; --card:#ffffff; --accent:#2f6fe4; --line:#dde3ec; }
+  @media (prefers-color-scheme: dark) {
+    :root { --text:#e6ebf3; --muted:#b4c0d2; --bg:#0b1626; --card:#12263f; --accent:#8ab4ff; --line:#2e4563; }
+  }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.9rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:32px 0 8px; color:var(--accent); }
+  .muted { color:var(--muted); }
+  .summary { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 20px; margin:24px 0; }
+  table { width:100%; border-collapse:collapse; background:var(--card); border-radius:8px; overflow:hidden; }
+  th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+  code { font-size:.92em; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<h1>GeoSnap Privacy Policy</h1>
+<p class="muted">Effective date: 31 October 2026 · Package <code>com.rtnglobal.geosnap</code> · Published by [DEVELOPER / PUBLISHER NAME]</p>
+
+<div class="summary"><strong>In short:</strong> GeoSnap does not collect, store or share any of your data on any server. The developer operates no server, and the app has no advertising, analytics, crash-reporting or tracking code, no account system and no internet permission.</div>
+
+<h2>1. Location</h2>
+<ul>
+<li>GeoSnap asks for location permission so it can print your location on photos and write it to the photo's metadata. Precise or approximate access is your choice, and the app works without it.</li>
+<li>Location is read from your phone's own location system (GPS/GNSS and, where available, the network location provider) <strong>only while the camera screen is open</strong>. GeoSnap never uses location in the background and does not request background-location permission.</li>
+<li>GeoSnap does not keep a location history. The current position is held in memory while the camera is open and is saved only inside photos you take.</li>
+</ul>
+
+<h2>2. Place names (reverse geocoding)</h2>
+<p>To show a place name such as "Lahore, Punjab, Pakistan", GeoSnap uses Android's built-in <strong>Geocoder</strong> service. GeoSnap passes the coordinates of your current position to that service on your device. <strong>On many devices this service is provided by the operating system or device manufacturer (for example by Google Play services) and may look up the coordinates online.</strong> That processing is performed by the provider of your device's geocoder under its own privacy policy (for Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). GeoSnap itself has no internet permission and does not send the coordinates anywhere.</p>
+<p>Recent place names are cached in memory only, so the same lookup isn't repeated, and are discarded when the app closes. You can stop place-name lookups at any time by turning off <em>Settings → Location name</em>. GPS coordinates and the stamp work fully offline.</p>
+
+<h2>3. Photos and metadata</h2>
+<ul>
+<li>Photos are saved <strong>only on your device</strong>: in <code>Pictures/GeoSnap</code> (shared photo storage), or, if you turn off "Save to gallery", in GeoSnap's private app storage, where they are removed if you uninstall the app.</li>
+<li>Each photo contains the visible stamp you configured (place name, coordinates, date and time) and EXIF metadata: GPS latitude, longitude, altitude and accuracy (when known), capture date and time, and basic camera details reported by your phone.</li>
+<li>GeoSnap has no cloud storage and never uploads photos.</li>
+</ul>
+
+<h2>4. Sharing</h2>
+<p>When you tap <em>Share</em>, the photo is handed to the app you choose through Android's standard share sheet. The shared photo includes its printed stamp and GPS metadata, so the recipient can see where it was taken. What happens next is governed by the app you shared with.</p>
+
+<h2>5. Permissions</h2>
+<table>
+<tr><th>Permission</th><th>Purpose</th></tr>
+<tr><td>Camera</td><td>Taking photos</td></tr>
+<tr><td>Precise / approximate location</td><td>Stamping photos with the location (optional)</td></tr>
+<tr><td>Storage (Android 8–9 only)</td><td>Saving photos to Pictures/GeoSnap on older Android versions</td></tr>
+</table>
+<p>GeoSnap does not request internet, contacts, microphone, phone, advertising ID, notification or background-location permissions.</p>
+
+<h2>6. Data collection summary</h2>
+<p>The developer collects <strong>no</strong> personal data, usage data, device identifiers, crash logs or analytics. Nothing is sold or shared with third parties by the developer.</p>
+
+<h2>7. Children</h2>
+<p>GeoSnap is a general-purpose camera app and is not directed at children. It collects no data from anyone, including children.</p>
+
+<h2>8. Settings storage</h2>
+<p>Your watermark and app preferences are stored locally on your device using Android DataStore and are excluded from cloud backup. Uninstalling the app removes them.</p>
+
+<h2>9. Changes</h2>
+<p>If this policy changes, the updated version will be published at this address with a new effective date.</p>
+
+<h2>10. Contact</h2>
+<p>Questions about this policy: mrt@harmony4all.org</p>
+</main>
+</body>
+</html>
