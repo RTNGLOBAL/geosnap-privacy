@@ -33,6 +33,7 @@
 <li>GeoSnap asks for location permission so it can print your location on photos and write it to the photo's metadata. Precise or approximate access is your choice, and the app works without it.</li>
 <li>Location is read from your phone's own location system (GPS/GNSS and, where available, the network location provider) <strong>only while the camera screen is open</strong>. GeoSnap never uses location in the background and does not request background-location permission.</li>
 <li>GeoSnap does not keep a location history. The current position is held in memory while the camera is open and is saved only inside photos you take.</li>
+<li>If you turn on <em>Compass direction</em> or <em>Level</em>, GeoSnap reads the phone's motion sensors (compass, accelerometer) while the camera is open. These readings need no permission, are not stored, and only the camera direction at the moment you take a photo is kept, in that photo.</li>
 </ul>
 
 <h2>2. Place names (reverse geocoding)</h2>
@@ -42,12 +43,18 @@
 <h2>3. Photos and metadata</h2>
 <ul>
 <li>Photos are saved <strong>only on your device</strong>: in <code>Pictures/GeoSnap</code> (shared photo storage), or, if you turn off "Save to gallery", in GeoSnap's private app storage, where they are removed if you uninstall the app.</li>
-<li>Each photo contains the visible stamp you configured (place name, coordinates, date and time) and EXIF metadata: GPS latitude, longitude, altitude and accuracy (when known), capture date and time, and basic camera details reported by your phone.</li>
+<li>Each photo contains the visible stamp you configured (any of: your note, place name, coordinates, camera direction, altitude, date and time) and EXIF metadata: GPS latitude, longitude, altitude, accuracy and camera direction (when known), your note (when it uses only basic Latin characters), capture date and time, and basic camera details reported by your phone.</li>
+<li>The note you type in Settings is stored only on your device, in the app's settings, and is printed on the photos you take.</li>
 <li>GeoSnap has no cloud storage and never uploads photos.</li>
 </ul>
 
 <h2>4. Sharing</h2>
-<p>When you tap <em>Share</em>, the photo is handed to the app you choose through Android's standard share sheet. The shared photo includes its printed stamp and GPS metadata, so the recipient can see where it was taken. What happens next is governed by the app you shared with.</p>
+<p>When you tap <em>Share</em>, you choose how photos are shared, and they are handed to the app you pick through Android's standard share sheet:</p>
+<ul>
+<li><strong>Share with location:</strong> the photo is shared as saved, with its printed stamp and GPS metadata, so the recipient can see where it was taken.</li>
+<li><strong>Share without GPS data:</strong> GeoSnap makes a temporary copy with all GPS metadata removed and shares that copy. The stamp printed on the photo is part of the image and stays visible. Temporary copies are kept in the app's private cache and removed automatically once they are a day old, the next time GeoSnap is opened or shares a photo.</li>
+</ul>
+<p>What happens next is governed by the app you shared with.</p>
 
 <h2>5. Permissions</h2>
 <table>
